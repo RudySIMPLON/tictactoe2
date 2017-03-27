@@ -103,13 +103,13 @@ function main(){
 			jeuEstFini= rechercherVainqueur(pions, joueurs, currentTurn);
 
 			if(jeuEstFini){
-				afficheur.sendMessage('joueur '+joueurs[currentTurn]+ " a gagné, il est vraiment trop fort")
+				afficheur.sendMessage('joueur '+joueurs[currentTurn]+ " a gagné ! Il est vraiment trop fort <br> <a href='index.html'>Rejouer</a>")
 			return; 
 			}
 
 
 				if(tableauEstPlein(pions)){
-					afficheur.sendMessage("Match nul");
+					afficheur.sendMessage("Match nul <br> <a href='index.html'>Rejouer</a>");
 					return false;
 
 				}
